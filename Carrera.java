@@ -1,6 +1,6 @@
 package org.sfsoft.carreracaballos;
+
 import java.awt.EventQueue;
-import java.awt.LayoutManager;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.beans.PropertyChangeEvent;
@@ -158,8 +158,6 @@ public class Carrera {
         frmCarrea.getContentPane().add(getLblDistancia());
         frmCarrea.getContentPane().add(getLbMarcador());
         frmCarrea.getContentPane().add(getProgresoCaballo1());
-        frmCarrea.getContentPane().add(getProgresoCaballo2());
-        frmCarrea.getContentPane().add(getProgresoCaballo3());
 
     }
 
@@ -173,12 +171,12 @@ public class Carrera {
     }
 
     public JProgressBar getPbCaballo2() {
-        if (this.pbCoche2 == null) {
-            this.pbCoche2 = new JProgressBar();
-            this.pbCoche2.setBounds(10, 137, 422, 19);
+        if (this.pbCaballo2 == null) {
+            this.pbCaballo2 = new JProgressBar();
+            this.pbCaballo2.setBounds(10, 137, 422, 19);
         }
 
-        return this.pbCoche2;
+        return this.pbCaballo2;
     }
 
     public JLabel getLblNewLabel() {
@@ -200,13 +198,13 @@ public class Carrera {
     }
 
     public JProgressBar getPbCaballo3() {
-        if (this.pbCoche3 == null) {
-            this.pbCoche3 = new JProgressBar();
-            this.pbCoche3.setString("34");
-            this.pbCoche3.setBounds(10, 207, 422, 19);
+        if (this.pbCaballo3 == null) {
+            this.pbCaballo3 = new JProgressBar();
+            this.pbCaballo3.setString("34");
+            this.pbCaballo3.setBounds(10, 207, 422, 19);
         }
 
-        return this.pbCoche3;
+        return this.pbCaballo3;
     }
 
     public JLabel getLblNewLabel_2() {
@@ -269,20 +267,6 @@ public class Carrera {
         return this.progresoCaballo1;
     }
 
-    public JLabel getProgresoCaballo2() {
-        if (this.progresoCaballo2 == null) {
-            this.progresoCaballo2 = new JLabel("");
-            this.progresoCaballo2.setBounds(65, 40, 46, 14);
-        }
-        return this.progresoCaballo2;
-    }
-    public JLabel getProgresoCaballo3(){
-        if (this.progresoCaballo3 == null) {
-            this.progresoCaballo3 = new JLabel("");
-            this.progresoCaballo3.setBounds(65, 40, 46, 14);
-        }
-        return this.progresoCaballo3;
-    }
 }
 
 

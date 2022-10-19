@@ -1,20 +1,19 @@
 public class Game {
     public static void controlador(String[] args) {
-        Lock lock = new ReentrantLock();
 
-        Player player1 = new Player("ping", lock);
-        Player player2 = new Player("pong", lock);
+        Player caballo1 = new Player("ping", lock);
+        Player caballo2 = new Player("pong", lock);
 
-        player1.setNextPlayer(player2);
-        player2.setNextPlayer(player1);
+        caballo1.setNextPlayer(caballo2);
+        caballo2.setNextPlayer(caballo1);
 
         System.out.println("Game starting...!");
 
-        player1.setPlay(true);
+        caballo1.setPlay(true);
 
-        Thread thread2 = new Thread(player2);
+        Thread thread2 = new Thread(caballo2);
         thread2.start();
-        Thread thread1 = new Thread(player1);
+        Thread thread1 = new Thread(caballo1);
         thread1.start();
 
         //Let the players play!
