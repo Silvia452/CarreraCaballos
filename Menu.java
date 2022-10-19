@@ -46,7 +46,7 @@ public class Menu {
         try{
             System.out.println("Introduce el numero de caballos que van a correr:");
             NUM_CABALLOS = sc.nextInt();
-            if NUM_CABALLOS > 8 {
+            if (NUM_CABALLOS > 8) {
                 System.out.println("Vuelve a introducir un número válido");
             }
             }

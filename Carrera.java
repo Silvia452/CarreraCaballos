@@ -1,4 +1,15 @@
-
+package org.sfsoft.carreracaballos;
+import java.awt.EventQueue;
+import java.awt.LayoutManager;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JProgressBar;
+import javax.swing.JTextField;
 public class Carrera {
 
     private JFrame frmCarrea;
@@ -106,6 +117,11 @@ public class Carrera {
         caballo2.execute();
         caballo3.execute();
         caballo4.execute();
+        caballo5.execute();
+        caballo6.execute();
+        caballo7.execute();
+        caballo8.execute();
+
     }
 
     public static void main(String[] args) {
@@ -142,6 +158,9 @@ public class Carrera {
         frmCarrea.getContentPane().add(getLblDistancia());
         frmCarrea.getContentPane().add(getLbMarcador());
         frmCarrea.getContentPane().add(getProgresoCaballo1());
+        frmCarrea.getContentPane().add(getProgresoCaballo2());
+        frmCarrea.getContentPane().add(getProgresoCaballo3());
+
     }
 
     public JProgressBar getPbCaballo1() {
@@ -258,11 +277,11 @@ public class Carrera {
         return this.progresoCaballo2;
     }
     public JLabel getProgresoCaballo3(){
-        if (this.progresoCaballo2 == null) {
-            this.progresoCaballo2 = new JLabel("");
-            this.progresoCaballo2.setBounds(65, 40, 46, 14);
+        if (this.progresoCaballo3 == null) {
+            this.progresoCaballo3 = new JLabel("");
+            this.progresoCaballo3.setBounds(65, 40, 46, 14);
         }
-        return this.progresoCaballo2;
+        return this.progresoCaballo3;
     }
 }
 
